@@ -3,7 +3,7 @@ FROM ruby:2.6.5
 # install a modern bundler version
 RUN gem install bundler
 
-RUN apt-get update && apt-get install git nodejs yarn
+RUN apt-get update && apt-get install -y git nodejs yarn
 
 ADD entrypoint.sh /entrypoint.sh
 
